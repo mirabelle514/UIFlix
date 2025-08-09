@@ -10,31 +10,20 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
     <footer className="bg-[#141414] text-gray-400 py-16 px-4 md:px-16">
       <div className="max-w-6xl mx-auto">
         {/* Citations Section */}
-        <div className="mb-12">
-          <h3 className="text-white text-2xl font-semibold mb-6">Sources & References</h3>
-          <p className="text-gray-300 mb-6">
-            All content is based on established UI/UX design principles and research from industry experts. 
-            Citations are provided for transparency and further learning.
-          </p>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {citations.map((citation) => (
-              <div key={citation.id} className="bg-gray-800/30 p-4 rounded">
-                <div className="flex items-start space-x-3">
-                  <span className="bg-[#E50914] text-white text-xs px-2 py-1 rounded flex-shrink-0">
-                    [{citation.id}]
-                  </span>
-                  <a 
-                    href={citation.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-400 hover:text-blue-300 text-sm underline leading-relaxed"
-                  >
-                    {citation.text}
-                  </a>
-                </div>
-              </div>
-            ))}
+        <div className="mb-12 bg-gray-800/30 rounded-lg p-6">
+          <div className="flex items-center justify-between">
+            <div>
+              <h3 className="text-white text-xl font-semibold mb-2">Sources & References</h3>
+              <p className="text-gray-300 text-sm">
+                All content is based on established UI/UX research from {citations.length} industry sources.
+              </p>
+            </div>
+            <button
+              onClick={() => onNavigate('/sources')}
+              className="bg-[#E50914] hover:bg-red-700 text-white px-4 py-2 rounded transition-colors text-sm"
+            >
+              View All Sources
+            </button>
           </div>
         </div>
 

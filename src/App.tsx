@@ -14,6 +14,7 @@ import DesignToolsPage from './pages/DesignToolsPage';
 import TemplatesPage from './pages/TemplatesPage';
 import CaseStudiesPage from './pages/CaseStudiesPage';
 import BestPracticesPage from './pages/BestPracticesPage';
+import SourcesPage from './pages/SourcesPage';
 import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
@@ -56,6 +57,7 @@ const AppContent: React.FC = () => {
           <Route path="/templates" element={<TemplatesPage onNavigate={handleNavigate} />} />
           <Route path="/case-studies" element={<CaseStudiesPage onNavigate={handleNavigate} />} />
           <Route path="/best-practices" element={<BestPracticesPage onNavigate={handleNavigate} />} />
+          <Route path="/sources" element={<SourcesPage onNavigate={handleNavigate} />} />
           <Route path="/about" element={<AboutPage onNavigate={handleNavigate} />} />
           <Route path="/contact" element={<ContactPage onNavigate={handleNavigate} />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage onNavigate={handleNavigate} />} />
