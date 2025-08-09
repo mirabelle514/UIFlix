@@ -12,20 +12,20 @@ export const categories: UICategory[] = [
   {
     id: 'typography',
     title: 'Typography Principles',
-    description: 'Essential typography principles for creating readable and accessible interfaces',
+    image: 'https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&w=800',
     image: 'https://images.pexels.com/photos/261763/pexels-photo-261763.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: 'hierarchy',
     title: 'Visual Hierarchy',
     description: 'Guide users attention through deliberate design choices',
-    image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800'
+    image: 'https://images.pexels.com/photos/1181244/pexels-photo-1181244.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     id: 'consistency',
     title: 'Consistency & Patterns',
     description: 'Build familiar and predictable user experiences',
-    image: 'https://images.pexels.com/photos/3184319/pexels-photo-3184319.jpeg?auto=compress&cs=tinysrgb&w=800'
+    image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   
   // User Experience & Interaction
@@ -34,7 +34,7 @@ export const categories: UICategory[] = [
     title: 'Navigation Design',
     description: 'Create intuitive navigation systems that guide users effectively',
     image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
-    featured: true
+    image: 'https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: 'interaction',
@@ -52,13 +52,13 @@ export const categories: UICategory[] = [
     id: 'buttons',
     title: 'Button & CTA Design',
     description: 'Design compelling calls-to-action that drive engagement',
-    image: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=800'
+    image: 'https://images.pexels.com/photos/1181396/pexels-photo-1181396.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   
   // Layout & Structure
   {
     id: 'layout',
-    title: 'Layout & Grid Systems',
+     image: 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800',
     description: 'Master responsive layouts and grid-based design',
     image: 'https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
@@ -112,7 +112,7 @@ export const categories: UICategory[] = [
     id: 'user-research',
     title: 'User Research & Testing',
     description: 'Validate design decisions through user insights',
-    image: 'https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800'
+    image: 'https://images.pexels.com/photos/1181316/pexels-photo-1181316.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   
   // Feedback & Communication
@@ -132,7 +132,7 @@ export const categories: UICategory[] = [
     id: 'loading',
     title: 'Loading & Progress',
     description: 'Keep users informed during wait times and processes',
-    image: 'https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&cs=tinysrgb&w=800'
+    image: 'https://images.pexels.com/photos/1181354/pexels-photo-1181354.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   
   // Advanced Concepts
