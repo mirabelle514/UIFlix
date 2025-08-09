@@ -1,7 +1,11 @@
 import React from 'react';
 import { citations } from '../data/uiPrinciples';
 
-const Footer: React.FC = () => {
+interface FooterProps {
+  onNavigate: (path: string) => void;
+}
+
+const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
   return (
     <footer className="bg-[#141414] text-gray-400 py-16 px-4 md:px-16">
       <div className="max-w-6xl mx-auto">
@@ -37,42 +41,42 @@ const Footer: React.FC = () => {
         {/* Footer Links */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h4 className="text-white font-semibold mb-4">Learn</h4>
+            <h4 className="text-white font-semibold mb-4">Design Principles</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Design Principles</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Color Theory</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Typography</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Accessibility</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="text-white font-semibold mb-4">Categories</h4>
-            <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Visual Design</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">User Experience</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Interface Design</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Design Systems</a></li>
+              <li><button onClick={() => onNavigate('/category/whitespace')} className="hover:text-white transition-colors text-left">White Space</button></li>
+              <li><button onClick={() => onNavigate('/category/typography')} className="hover:text-white transition-colors text-left">Typography</button></li>
+              <li><button onClick={() => onNavigate('/category/hierarchy')} className="hover:text-white transition-colors text-left">Visual Hierarchy</button></li>
+              <li><button onClick={() => onNavigate('/category/accessibility')} className="hover:text-white transition-colors text-left">Accessibility</button></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-white font-semibold mb-4">Resources</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">Design Tools</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Templates</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Case Studies</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Best Practices</a></li>
+              <li><button onClick={() => onNavigate('/design-tools')} className="hover:text-white transition-colors text-left">Design Tools</button></li>
+              <li><button onClick={() => onNavigate('/templates')} className="hover:text-white transition-colors text-left">Templates</button></li>
+              <li><button onClick={() => onNavigate('/case-studies')} className="hover:text-white transition-colors text-left">Case Studies</button></li>
+              <li><button onClick={() => onNavigate('/best-practices')} className="hover:text-white transition-colors text-left">Best Practices</button></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="text-white font-semibold mb-4">Learn</h4>
+            <ul className="space-y-2 text-sm">
+              <li><button onClick={() => onNavigate('/learn')} className="hover:text-white transition-colors text-left">Start Learning</button></li>
+              <li><button onClick={() => onNavigate('/categories')} className="hover:text-white transition-colors text-left">All Categories</button></li>
+              <li><button onClick={() => onNavigate('/my-learning')} className="hover:text-white transition-colors text-left">My Progress</button></li>
+              <li><button onClick={() => onNavigate('/search')} className="hover:text-white transition-colors text-left">Search</button></li>
             </ul>
           </div>
 
           <div>
             <h4 className="text-white font-semibold mb-4">About</h4>
             <ul className="space-y-2 text-sm">
-              <li><a href="#" className="hover:text-white transition-colors">About UIFlix</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Contact</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Privacy Policy</a></li>
-              <li><a href="#" className="hover:text-white transition-colors">Terms of Service</a></li>
+              <li><button onClick={() => onNavigate('/about')} className="hover:text-white transition-colors text-left">About UIFlix</button></li>
+              <li><button onClick={() => onNavigate('/contact')} className="hover:text-white transition-colors text-left">Contact</button></li>
+              <li><button onClick={() => onNavigate('/privacy-policy')} className="hover:text-white transition-colors text-left">Privacy Policy</button></li>
+              <li><button onClick={() => onNavigate('/terms-of-service')} className="hover:text-white transition-colors text-left">Terms of Service</button></li>
             </ul>
           </div>
         </div>

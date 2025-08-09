@@ -53,14 +53,14 @@ const Header: React.FC<HeaderProps> = ({ onSearch, onNavigate, currentPath }) =>
               Search
             </button>
             <button 
-              onClick={() => onNavigate('/category/whitespace')}
-              className="text-gray-400 hover:text-gray-300 transition-colors"
+              onClick={() => onNavigate('/categories')}
+              className={`transition-colors ${currentPath === '/categories' ? 'text-white' : 'text-gray-400 hover:text-gray-300'}`}
             >
               Categories
             </button>
             <button 
-              onClick={() => onNavigate('/profile')}
-              className={`transition-colors ${currentPath === '/profile' ? 'text-white' : 'text-gray-400 hover:text-gray-300'}`}
+              onClick={() => onNavigate('/my-learning')}
+              className={`transition-colors ${currentPath === '/my-learning' ? 'text-white' : 'text-gray-400 hover:text-gray-300'}`}
             >
               My Learning
             </button>
