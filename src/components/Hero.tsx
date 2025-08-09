@@ -29,12 +29,12 @@ const Hero: React.FC<HeroProps> = ({ onPlayClick, onInfoClick }) => {
 
           {/* Title */}
           <h1 className="text-4xl md:text-6xl font-bold text-white leading-tight">
-            White Space & Color Theory
+            UX Principles for Developers
           </h1>
 
           {/* Description */}
           <p className="text-lg md:text-xl text-gray-200 leading-relaxed max-w-xl">
-            Master the fundamentals of visual hierarchy and color harmony. Learn when to use white space effectively and how color theory guides the creation of visually satisfying interfaces.
+            Bridge the gap between code and user experience. Learn essential UX/UI principles that every developer should know to build intuitive, accessible, and user-friendly applications.
           </p>
 
           {/* Action Buttons */}
@@ -44,7 +44,7 @@ const Hero: React.FC<HeroProps> = ({ onPlayClick, onInfoClick }) => {
               className="flex items-center space-x-2 bg-white text-black px-8 py-3 rounded font-semibold hover:bg-gray-200 transition-colors netflix-button"
             >
               <Play size={20} fill="currentColor" />
-              <span>Start Learning</span>
+              <span>Start Learning UX</span>
             </button>
             
             <button 
@@ -59,16 +59,16 @@ const Hero: React.FC<HeroProps> = ({ onPlayClick, onInfoClick }) => {
           {/* Key Points */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
             <div className="text-sm text-gray-300">
-              ✓ Improves readability and focus
+              ✓ Code with user empathy
             </div>
             <div className="text-sm text-gray-300">
-              ✓ Creates visual hierarchy
+              ✓ Build accessible interfaces
             </div>
             <div className="text-sm text-gray-300">
-              ✓ Guides user attention
+              ✓ Implement responsive design
             </div>
             <div className="text-sm text-gray-300">
-              ✓ Elevates design aesthetics
+              ✓ Optimize user workflows
             </div>
           </div>
         </div>

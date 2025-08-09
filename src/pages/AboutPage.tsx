@@ -39,12 +39,12 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
         {/* Hero Section */}
         <div className="text-center mb-16">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            About UIFlix
+            About DevUX
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
-            We're on a mission to make UI design education accessible, engaging, and effective. 
-            UIFlix combines Netflix's intuitive user experience with comprehensive design education 
-            to create the ultimate learning platform for aspiring and experienced designers.
+            We're on a mission to bridge the gap between development and user experience. 
+            DevUX combines Netflix's intuitive user experience with comprehensive UX education 
+            to create the ultimate learning platform for developers who want to build better user interfaces.
           </p>
         </div>
 
@@ -54,9 +54,9 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             <Target className="text-[#E50914] mb-4" size={48} />
             <h2 className="text-2xl font-bold text-white mb-4">Our Mission</h2>
             <p className="text-gray-300 leading-relaxed">
-              To democratize UI design education by providing high-quality, accessible learning 
-              resources that help designers at all levels master the principles of great interface design. 
-              We believe that good design should be learned through engaging, practical experiences.
+              To empower developers with essential UX knowledge by providing high-quality, accessible learning 
+              resources that bridge the gap between code and user experience. We believe that every developer 
+              should understand the principles that make interfaces intuitive and user-friendly.
             </p>
           </div>
 
@@ -64,9 +64,9 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
             <Heart className="text-[#E50914] mb-4" size={48} />
             <h2 className="text-2xl font-bold text-white mb-4">Our Vision</h2>
             <p className="text-gray-300 leading-relaxed">
-              To become the world's leading platform for UI design education, where every designer 
+              To become the world's leading platform for UX education for developers, where every engineer 
               can find the resources they need to create exceptional user experiences. We envision 
-              a future where great design is accessible to everyone, regardless of background or experience.
+              a future where great UX is built into every application from the ground up.
             </p>
           </div>
         </div>
@@ -75,12 +75,12 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-16">
           <div className="bg-gray-800/50 rounded-lg p-6 text-center">
             <div className="text-3xl font-bold text-white mb-2">50+</div>
-            <div className="text-gray-400">Design Principles</div>
+            <div className="text-gray-400">UX Principles</div>
           </div>
           
           <div className="bg-gray-800/50 rounded-lg p-6 text-center">
             <div className="text-3xl font-bold text-white mb-2">10K+</div>
-            <div className="text-gray-400">Active Learners</div>
+            <div className="text-gray-400">Developer Learners</div>
           </div>
           
           <div className="bg-gray-800/50 rounded-lg p-6 text-center">
@@ -96,17 +96,17 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
 
         {/* What Makes Us Different */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">What Makes UIFlix Different</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">What Makes DevUX Different</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-[#E50914] rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users size={32} className="text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Netflix-Inspired UX</h3>
+              <h3 className="text-xl font-semibold text-white mb-3">Developer-Focused Content</h3>
               <p className="text-gray-400">
-                We've borrowed the best UX patterns from Netflix to create an engaging, 
-                familiar learning experience that keeps you coming back.
+                Content specifically tailored for developers who need to understand UX principles 
+                without becoming full-time designers. Practical, code-focused examples.
               </p>
             </div>
 
@@ -114,10 +114,10 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
               <div className="w-16 h-16 bg-[#E50914] rounded-full flex items-center justify-center mx-auto mb-4">
                 <Award size={32} className="text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Industry-Proven Content</h3>
+              <h3 className="text-xl font-semibold text-white mb-3">Implementation-Ready</h3>
               <p className="text-gray-400">
-                All our content is based on established design principles and backed by 
-                academic research and industry best practices.
+                Every principle comes with practical implementation guidelines, code examples, 
+                and technical considerations for real-world development scenarios.
               </p>
             </div>
 
@@ -125,10 +125,10 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
               <div className="w-16 h-16 bg-[#E50914] rounded-full flex items-center justify-center mx-auto mb-4">
                 <Target size={32} className="text-white" />
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Practical Learning</h3>
+              <h3 className="text-xl font-semibold text-white mb-3">Technical Integration</h3>
               <p className="text-gray-400">
-                Every principle comes with real-world examples, practical applications, 
-                and actionable insights you can apply immediately.
+                Learn how UX principles integrate with modern development frameworks, 
+                accessibility standards, and performance considerations.
               </p>
             </div>
           </div>
