@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { ExternalLink, BookOpen, Filter } from 'lucide-react';
+import { ExternalLink, BookOpen, Filter, ChevronDown, ChevronUp } from 'lucide-react';
 import { citations } from '../data/uiPrinciples';
 
 interface SourcesPageProps {
@@ -7,26 +7,115 @@ interface SourcesPageProps {
 }
 
 const SourcesPage: React.FC<SourcesPageProps> = ({ onNavigate }) => {
-  const [filterType, setFilterType] = useState<string>('all');
+  const [expandedCategories, setExpandedCategories] = useState<string[]>(['design', 'research']);
 
-  // Categorize citations (you could add a category field to citations data)
+  // Categorize citations by topic
   const categorizedCitations = {
-    design: citations.filter(c => c.text.toLowerCase().includes('design') || c.text.toLowerCase().includes('ui')),
-    research: citations.filter(c => c.text.toLowerCase().includes('research') || c.text.toLowerCase().includes('study')),
-    accessibility: citations.filter(c => c.text.toLowerCase().includes('accessibility') || c.text.toLowerCase().includes('wcag')),
-    other: citations.filter(c => 
-      !c.text.toLowerCase().includes('design') && 
-      !c.text.toLowerCase().includes('ui') && 
-      !c.text.toLowerCase().includes('research') && 
-      !c.text.toLowerCase().includes('study') &&
-      !c.text.toLowerCase().includes('accessibility') &&
-      !c.text.toLowerCase().includes('wcag')
-    )
+    design: {
+      title: 'Design & UI Principles',
+      color: 'blue',
+      sources: citations.filter(c => 
+        c.text.toLowerCase().includes('design') || 
+        c.text.toLowerCase().includes('ui') ||
+        c.text.toLowerCase().includes('interface') ||
+        c.text.toLowerCase().includes('visual') ||
+        c.text.toLowerCase().includes('typography') ||
+        c.text.toLowerCase().includes('color')
+      )
+    },
+    research: {
+      title: 'UX Research & Studies',
+      color: 'green',
+      sources: citations.filter(c => 
+        c.text.toLowerCase().includes('research') || 
+        c.text.toLowerCase().includes('study') ||
+        c.text.toLowerCase().includes('user') ||
+        c.text.toLowerCase().includes('usability') ||
+        c.text.toLowerCase().includes('testing')
+      )
+    },
+    accessibility: {
+      title: 'Accessibility & Inclusion',
+      color: 'purple',
+      sources: citations.filter(c => 
+        c.text.toLowerCase().includes('accessibility') || 
+        c.text.toLowerCase().includes('wcag') ||
+        c.text.toLowerCase().includes('inclusive') ||
+        c.text.toLowerCase().includes('disability') ||
+        c.text.toLowerCase().includes('a11y')
+      )
+    },
+    development: {
+      title: 'Development & Implementation',
+      color: 'orange',
+      sources: citations.filter(c => 
+        c.text.toLowerCase().includes('development') || 
+        c.text.toLowerCase().includes('code') ||
+        c.text.toLowerCase().includes('implementation') ||
+        c.text.toLowerCase().includes('frontend') ||
+        c.text.toLowerCase().includes('css') ||
+        c.text.toLowerCase().includes('html')
+      )
+    },
+    standards: {
+      title: 'Standards & Guidelines',
+      color: 'red',
+      sources: citations.filter(c => 
+        c.text.toLowerCase().includes('guideline') || 
+        c.text.toLowerCase().includes('standard') ||
+        c.text.toLowerCase().includes('specification') ||
+        c.text.toLowerCase().includes('w3c') ||
+        c.text.toLowerCase().includes('iso')
+      )
+    }
   };
 
-  const filteredCitations = filterType === 'all' 
-    ? citations 
-    : categorizedCitations[filterType as keyof typeof categorizedCitations] || citations;
+  // Add remaining citations to "Other" category
+  const usedIds = new Set();
+  Object.values(categorizedCitations).forEach(category => {
+    category.sources.forEach(source => usedIds.add(source.id));
+  });
+
+  const otherSources = citations.filter(c => !usedIds.has(c.id));
+  if (otherSources.length > 0) {
+    categorizedCitations.other = {
+      title: 'Other Resources',
+      color: 'gray',
+      sources: otherSources
+    };
+  }
+
+  const toggleCategory = (categoryKey: string) => {
+    setExpandedCategories(prev => 
+      prev.includes(categoryKey) 
+        ? prev.filter(key => key !== categoryKey)
+        : [...prev, categoryKey]
+    );
+  };
+
+  const getColorClasses = (color: string) => {
+    const colors = {
+      blue: 'border-blue-500/30 bg-blue-600/10',
+      green: 'border-green-500/30 bg-green-600/10',
+      purple: 'border-purple-500/30 bg-purple-600/10',
+      orange: 'border-orange-500/30 bg-orange-600/10',
+      red: 'border-red-500/30 bg-red-600/10',
+      gray: 'border-gray-500/30 bg-gray-600/10'
+    };
+    return colors[color] || colors.gray;
+  };
+
+  const getBadgeColor = (color: string) => {
+    const colors = {
+      blue: 'bg-blue-600',
+      green: 'bg-green-600',
+      purple: 'bg-purple-600',
+      orange: 'bg-orange-600',
+      red: 'bg-red-600',
+      gray: 'bg-gray-600'
+    };
+    return colors[color] || colors.gray;
+  };
 
   return (
     <div className="min-h-screen bg-[#141414] pt-20">
@@ -38,84 +127,79 @@ const SourcesPage: React.FC<SourcesPageProps> = ({ onNavigate }) => {
           </h1>
           <p className="text-gray-400 text-lg max-w-3xl">
             All content on DevUX is based on established UI/UX design principles and research from 
-            industry experts. We provide complete citations for transparency and to encourage further learning.
+            industry experts. Sources are organized by topic for easy navigation and reference.
           </p>
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
-          <div className="bg-gray-800/50 rounded-lg p-6 text-center">
-            <div className="text-2xl font-bold text-white mb-1">{citations.length}</div>
-            <div className="text-gray-400 text-sm">Total Sources</div>
-          </div>
-          
-          <div className="bg-gray-800/50 rounded-lg p-6 text-center">
-            <div className="text-2xl font-bold text-white mb-1">{categorizedCitations.design.length}</div>
-            <div className="text-gray-400 text-sm">Design Sources</div>
-          </div>
-          
-          <div className="bg-gray-800/50 rounded-lg p-6 text-center">
-            <div className="text-2xl font-bold text-white mb-1">{categorizedCitations.research.length}</div>
-            <div className="text-gray-400 text-sm">Research Papers</div>
-          </div>
-          
-          <div className="bg-gray-800/50 rounded-lg p-6 text-center">
-            <div className="text-2xl font-bold text-white mb-1">{categorizedCitations.accessibility.length}</div>
-            <div className="text-gray-400 text-sm">Accessibility Guides</div>
-          </div>
+        <div className="grid grid-cols-2 md:grid-cols-6 gap-4 mb-8">
+          {Object.entries(categorizedCitations).map(([key, category]) => (
+            <div key={key} className="bg-gray-800/50 rounded-lg p-4 text-center">
+              <div className="text-xl font-bold text-white mb-1">{category.sources.length}</div>
+              <div className="text-gray-400 text-xs">{category.title.split(' ')[0]}</div>
+            </div>
+          ))}
         </div>
 
-        {/* Filter */}
-        <div className="flex items-center space-x-4 mb-8">
-          <div className="flex items-center space-x-2">
-            <Filter size={16} className="text-gray-400" />
-            <select
-              value={filterType}
-              onChange={(e) => setFilterType(e.target.value)}
-              className="bg-gray-800 border border-gray-600 text-white px-3 py-2 rounded focus:outline-none focus:border-[#E50914]"
-            >
-              <option value="all">All Sources</option>
-              <option value="design">Design & UI</option>
-              <option value="research">Research & Studies</option>
-              <option value="accessibility">Accessibility</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-          
-          <span className="text-gray-400 text-sm">
-            {filteredCitations.length} sources
-          </span>
-        </div>
+        {/* Categorized Sources */}
+        <div className="space-y-6 mb-12">
+          {Object.entries(categorizedCitations).map(([categoryKey, category]) => (
+            <div key={categoryKey} className={`border rounded-lg ${getColorClasses(category.color)}`}>
+              {/* Category Header */}
+              <button
+                onClick={() => toggleCategory(categoryKey)}
+                className="w-full p-6 flex items-center justify-between hover:bg-white/5 transition-colors"
+              >
+                <div className="flex items-center space-x-4">
+                  <span className={`${getBadgeColor(category.color)} text-white text-sm px-3 py-1 rounded font-medium`}>
+                    {category.sources.length}
+                  </span>
+                  <h2 className="text-xl font-bold text-white">{category.title}</h2>
+                </div>
+                
+                {expandedCategories.includes(categoryKey) ? (
+                  <ChevronUp className="text-gray-400" size={24} />
+                ) : (
+                  <ChevronDown className="text-gray-400" size={24} />
+                )}
+              </button>
 
-        {/* Citations List */}
-        <div className="space-y-4 mb-12">
-          {filteredCitations.map((citation) => (
-            <div key={citation.id} className="bg-gray-800/50 rounded-lg p-6 hover:bg-gray-800/70 transition-colors">
-              <div className="flex items-start space-x-4">
-                <span className="bg-[#E50914] text-white text-sm px-3 py-1 rounded flex-shrink-0 font-medium">
-                  [{citation.id}]
-                </span>
-                <div className="flex-1">
-                  <a 
-                    href={citation.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-blue-400 hover:text-blue-300 underline leading-relaxed block mb-2"
-                  >
-                    {citation.text}
-                  </a>
-                  <div className="flex items-center space-x-2 text-gray-500 text-sm">
-                    <ExternalLink size={14} />
-                    <span>External Link</span>
+              {/* Category Sources */}
+              {expandedCategories.includes(categoryKey) && (
+                <div className="px-6 pb-6">
+                  <div className="space-y-3">
+                    {category.sources.map((citation) => (
+                      <div key={citation.id} className="bg-gray-800/30 rounded-lg p-4 hover:bg-gray-800/50 transition-colors">
+                        <div className="flex items-start space-x-4">
+                          <span className="bg-[#E50914] text-white text-xs px-2 py-1 rounded flex-shrink-0 font-medium">
+                            [{citation.id}]
+                          </span>
+                          <div className="flex-1">
+                            <a 
+                              href={citation.url}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="text-blue-400 hover:text-blue-300 underline leading-relaxed block mb-2"
+                            >
+                              {citation.text}
+                            </a>
+                            <div className="flex items-center space-x-2 text-gray-500 text-sm">
+                              <ExternalLink size={12} />
+                              <span>External Link</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    ))}
                   </div>
                 </div>
-              </div>
+              )}
             </div>
           ))}
         </div>
 
         {/* About Our Sources */}
-        <div className="bg-gray-800/30 rounded-lg p-8">
+        <div className="bg-gray-800/30 rounded-lg p-8 mb-8">
           <div className="flex items-start space-x-4 mb-6">
             <BookOpen className="text-[#E50914] mt-1" size={32} />
             <div>
@@ -143,7 +227,7 @@ const SourcesPage: React.FC<SourcesPageProps> = ({ onNavigate }) => {
         </div>
 
         {/* Disclaimer */}
-        <div className="mt-8 p-6 bg-yellow-900/20 border border-yellow-500/30 rounded-lg">
+        <div className="p-6 bg-yellow-900/20 border border-yellow-500/30 rounded-lg">
           <h3 className="text-yellow-300 font-semibold mb-2">Educational Use Disclaimer</h3>
           <p className="text-yellow-200 text-sm">
             <strong>Disclaimer:</strong> DevUX is an educational platform created to teach UI design principles. 
