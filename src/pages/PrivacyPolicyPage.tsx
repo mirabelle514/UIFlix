@@ -9,8 +9,8 @@ const PrivacyPolicyPage: React.FC<PrivacyPolicyPageProps> = ({ onNavigate }) => 
   return (
     <div className="min-h-screen bg-[#141414] pt-20">
       <div className="px-4 md:px-16 py-8">
-        {/* Header */}
-        <div className="text-center mb-12">
+        {/* Header - Clean Design */}
+        <div className="text-center mb-12 py-16 bg-gradient-to-r from-gray-800/30 to-gray-900/30 rounded-lg">
           <h1 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Privacy Policy
           </h1>

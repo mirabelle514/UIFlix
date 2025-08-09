@@ -57,15 +57,10 @@ const PrinciplePage: React.FC<PrinciplePageProps> = ({ onNavigate }) => {
       </div>
 
       {/* Hero Section */}
-      <div className="relative h-96 mb-12">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ 
-            backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.8) 50%, transparent 80%), url(${principle.image})`,
-          }}
-        />
-        
-        <div className="relative z-10 flex flex-col justify-center h-full px-4 md:px-16 max-w-4xl">
+      <div className="px-4 md:px-16 py-12 mb-12">
+        <div className="flex flex-col lg:flex-row items-start gap-12">
+          {/* Content */}
+          <div className="lg:w-2/3">
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
               <span className="bg-[#E50914] text-white px-3 py-1 rounded text-sm font-medium">
@@ -128,6 +123,16 @@ const PrinciplePage: React.FC<PrinciplePageProps> = ({ onNavigate }) => {
                 <span>{isFavorited ? 'Favorited' : 'Add to Favorites'}</span>
               </button>
             </div>
+          </div>
+        </div>
+          
+          {/* Image */}
+          <div className="lg:w-1/3">
+            <img 
+              src={principle.image} 
+              alt={principle.title}
+              className="w-full h-64 object-cover rounded-lg shadow-lg sticky top-24"
+            />
           </div>
         </div>
       </div>

@@ -35,16 +35,11 @@ const CategoryPage: React.FC<CategoryPageProps> = ({ onNavigate }) => {
 
   return (
     <div className="min-h-screen bg-[#141414] pt-20">
-      {/* Hero Section */}
-      <div className="relative h-96 mb-12">
-        <div 
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ 
-            backgroundImage: `linear-gradient(to right, rgba(0,0,0,0.8) 40%, transparent 70%), url(${category.image})`,
-          }}
-        />
-        
-        <div className="relative z-10 flex flex-col justify-center h-full px-4 md:px-16 max-w-4xl">
+      {/* Hero Section - Clean Layout */}
+      <div className="px-4 md:px-16 py-12 mb-12">
+        <div className="flex flex-col lg:flex-row items-center gap-12">
+          {/* Content */}
+          <div className="lg:w-2/3">
           <div className="space-y-6">
             <div className="inline-block">
               <span className="bg-[#E50914] text-white px-3 py-1 rounded text-sm font-medium">
@@ -74,6 +69,16 @@ const CategoryPage: React.FC<CategoryPageProps> = ({ onNavigate }) => {
                 <span>Beginner to Advanced</span>
               </div>
             </div>
+          </div>
+        </div>
+          
+          {/* Image */}
+          <div className="lg:w-1/3">
+            <img 
+              src={category.image} 
+              alt={category.title}
+              className="w-full h-64 object-cover rounded-lg shadow-lg"
+            />
           </div>
         </div>
       </div>

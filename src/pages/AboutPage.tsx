@@ -36,8 +36,8 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
   return (
     <div className="min-h-screen bg-[#141414] pt-20">
       <div className="px-4 md:px-16 py-8">
-        {/* Hero Section */}
-        <div className="text-center mb-16">
+        {/* Hero Section - Clean Design */}
+        <div className="text-center mb-16 py-16 bg-gradient-to-r from-gray-800/30 to-gray-900/30 rounded-lg">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
             About DevUX
           </h1>

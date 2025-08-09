@@ -8,17 +8,10 @@ interface HeroProps {
 
 const Hero: React.FC<HeroProps> = ({ onPlayClick, onInfoClick }) => {
   return (
-    <div className="relative h-screen">
-      {/* Background Image */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center"
-        style={{ 
-          backgroundImage: 'linear-gradient(to right, rgba(0,0,0,0.8) 40%, transparent 70%), url(https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=1200)',
-        }}
-      />
-      
-      {/* Content */}
-      <div className="relative z-10 flex flex-col justify-center h-full px-4 md:px-16 max-w-2xl">
+    <div className="bg-gradient-to-br from-gray-900 via-[#141414] to-gray-800 min-h-screen">
+      <div className="flex flex-col lg:flex-row items-center justify-between px-4 md:px-16 py-16 min-h-screen">
+        {/* Content */}
+        <div className="lg:w-1/2 space-y-8">
         <div className="space-y-6">
           {/* Category Badge */}
           <div className="inline-block">
@@ -73,9 +66,20 @@ const Hero: React.FC<HeroProps> = ({ onPlayClick, onInfoClick }) => {
           </div>
         </div>
       </div>
-
-      {/* Fade to black gradient */}
-      <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-[#141414] to-transparent" />
+        
+        {/* Visual Element */}
+        <div className="lg:w-1/2 mt-12 lg:mt-0">
+          <div className="relative">
+            <img 
+              src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="UX Design Workspace"
+              className="rounded-lg shadow-2xl w-full max-w-lg mx-auto"
+            />
+            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-[#E50914] rounded-full opacity-20"></div>
+            <div className="absolute -top-4 -left-4 w-24 h-24 bg-blue-500 rounded-full opacity-20"></div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
