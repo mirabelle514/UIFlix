@@ -71,7 +71,7 @@ const Hero: React.FC<HeroProps> = ({ onPlayClick, onInfoClick }) => {
         <div className="lg:w-1/2 mt-12 lg:mt-0">
           <div className="relative">
             <img 
-              src="https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=800"
+              src="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=800"
               alt="UX Design Workspace"
               className="rounded-lg shadow-2xl w-full max-w-lg mx-auto"
             />
