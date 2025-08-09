@@ -11,10 +11,10 @@ const Hero: React.FC<HeroProps> = ({ onPlayClick, onInfoClick }) => {
     <div className="bg-gradient-to-br from-gray-900 via-[#141414] to-gray-800 min-h-screen">
       <div className="flex flex-col lg:flex-row items-center justify-between px-4 md:px-16 py-16 min-h-screen">
         {/* Content */}
-        <div className="lg:w-1/2 space-y-8">
-        <div className="space-y-6">
+        <div className="w-full max-w-4xl space-y-8">
+        <div className="space-y-6 text-left">
           {/* Category Badge */}
-          <div className="inline-block">
+          <div>
             <span className="bg-[#E50914] text-white px-3 py-1 rounded text-sm font-medium">
               FEATURED PRINCIPLE
             </span>
@@ -50,7 +50,7 @@ const Hero: React.FC<HeroProps> = ({ onPlayClick, onInfoClick }) => {
           </div>
 
           {/* Key Points */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4 max-w-2xl">
             <div className="text-sm text-gray-300">
               ✓ Code with user empathy
             </div>
@@ -67,18 +67,6 @@ const Hero: React.FC<HeroProps> = ({ onPlayClick, onInfoClick }) => {
         </div>
       </div>
         
-        {/* Visual Element */}
-        <div className="lg:w-1/2 mt-12 lg:mt-0">
-          <div className="relative">
-            <img 
-              src="https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=800"
-              alt="UX Design Workspace"
-              className="rounded-lg shadow-2xl w-full max-w-lg mx-auto"
-            />
-            <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-[#E50914] rounded-full opacity-20"></div>
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-blue-500 rounded-full opacity-20"></div>
-          </div>
-        </div>
       </div>
     </div>
   );

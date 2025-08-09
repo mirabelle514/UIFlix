@@ -1,6 +1,4 @@
 import React from 'react';
-import { useState } from 'react';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { citations } from '../data/uiPrinciples';
 
 interface FooterProps {
@@ -8,18 +6,6 @@ interface FooterProps {
 }
 
 const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
-  const [currentCitationIndex, setCurrentCitationIndex] = useState(0);
-
-  const nextCitation = () => {
-    setCurrentCitationIndex((prev) => 
-      prev < citations.length - 1 ? prev + 1 : prev
-    );
-  };
-
-  const prevCitation = () => {
-    setCurrentCitationIndex((prev) => prev > 0 ? prev - 1 : prev);
-  };
-
   return (
     <footer className="bg-[#141414] text-gray-400 py-16 px-4 md:px-16">
       <div className="max-w-6xl mx-auto">
@@ -31,63 +17,24 @@ const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             Citations are provided for transparency and further learning.
           </p>
           
-          <div className="relative">
-            <div className="overflow-hidden">
-              <div 
-                className="flex transition-transform duration-300 ease-in-out"
-                style={{ transform: `translateX(-${currentCitationIndex * 100}%)` }}
-              >
-                {citations.map((citation) => (
-                  <div key={citation.id} className="w-full flex-shrink-0">
-                    <div className="bg-gray-800/30 p-6 rounded mx-2">
-                      <div className="flex items-start space-x-3">
-                        <span className="bg-[#E50914] text-white text-xs px-2 py-1 rounded flex-shrink-0">
-                          [{citation.id}]
-                        </span>
-                        <a 
-                          href={citation.url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-blue-400 hover:text-blue-300 text-sm underline leading-relaxed"
-                        >
-                          {citation.text}
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {citations.map((citation) => (
+              <div key={citation.id} className="bg-gray-800/30 p-4 rounded">
+                <div className="flex items-start space-x-3">
+                  <span className="bg-[#E50914] text-white text-xs px-2 py-1 rounded flex-shrink-0">
+                    [{citation.id}]
+                  </span>
+                  <a 
+                    href={citation.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-400 hover:text-blue-300 text-sm underline leading-relaxed"
+                  >
+                    {citation.text}
+                  </a>
+                </div>
               </div>
-            </div>
-            
-            {/* Navigation Buttons */}
-            <button
-              onClick={prevCitation}
-              className="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white p-2 rounded-full transition-colors"
-              disabled={currentCitationIndex === 0}
-            >
-              <ChevronLeft size={20} />
-            </button>
-            
-            <button
-              onClick={nextCitation}
-              className="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black/50 hover:bg-black/80 text-white p-2 rounded-full transition-colors"
-              disabled={currentCitationIndex === citations.length - 1}
-            >
-              <ChevronRight size={20} />
-            </button>
-            
-            {/* Dots Indicator */}
-            <div className="flex justify-center mt-4 space-x-2">
-              {citations.map((_, index) => (
-                <button
-                  key={index}
-                  onClick={() => setCurrentCitationIndex(index)}
-                  className={`w-2 h-2 rounded-full transition-colors ${
-                    index === currentCitationIndex ? 'bg-[#E50914]' : 'bg-gray-600'
-                  }`}
-                />
-              ))}
-            </div>
+            ))}
           </div>
         </div>
 
