@@ -14,22 +14,24 @@ const DesignToolsPage: React.FC<DesignToolsPageProps> = ({ onNavigate }) => {
       name: 'Figma',
       category: 'design',
       description: 'Collaborative interface design tool with real-time collaboration',
-      image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg',
+      image: 'https://images.pexels.com/photos/3184319/pexels-photo-3184319.jpeg?auto=compress&cs=tinysrgb&w=800',
       rating: 4.9,
       price: 'Free/Paid',
       url: 'https://figma.com',
-      features: ['Real-time collaboration', 'Prototyping', 'Design systems', 'Developer handoff']
+      features: ['Real-time collaboration', 'Prototyping', 'Design systems', 'Developer handoff'],
+      detailedDescription: 'Figma revolutionized design collaboration by moving design tools to the browser. It offers vector-based design capabilities, real-time multiplayer editing, and comprehensive prototyping features. Teams can work simultaneously on designs, leave comments, and maintain design systems with shared components and styles.'
     },
     {
       id: 'sketch',
       name: 'Sketch',
       category: 'design',
       description: 'Vector-based design tool for Mac with extensive plugin ecosystem',
-      image: 'https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg',
+      image: 'https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&w=800',
       rating: 4.7,
       price: 'Paid',
       url: 'https://sketch.com',
-      features: ['Vector editing', 'Symbols', 'Plugins', 'Prototyping']
+      features: ['Vector editing', 'Symbols', 'Plugins', 'Prototyping'],
+      detailedDescription: 'Sketch pioneered modern UI design tools with its vector-based approach and symbol system. It offers powerful design capabilities specifically tailored for digital interfaces, with an extensive plugin ecosystem that extends functionality for everything from content generation to design system management.'
     },
     {
       id: 'adobe-xd',

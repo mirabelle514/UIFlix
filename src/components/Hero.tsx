@@ -13,7 +13,7 @@ const Hero: React.FC<HeroProps> = ({ onPlayClick, onInfoClick }) => {
       <div 
         className="absolute inset-0 bg-cover bg-center"
         style={{ 
-          backgroundImage: 'linear-gradient(to right, rgba(0,0,0,0.8) 40%, transparent 70%), url(https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg)',
+          backgroundImage: 'linear-gradient(to right, rgba(0,0,0,0.8) 40%, transparent 70%), url(https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=1200)',
         }}
       />
       

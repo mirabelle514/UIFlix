@@ -14,22 +14,24 @@ const TemplatesPage: React.FC<TemplatesPageProps> = ({ onNavigate }) => {
       name: 'Admin Dashboard',
       category: 'dashboard',
       description: 'Clean and modern admin dashboard with data visualization components',
-      image: 'https://images.pexels.com/photos/3184304/pexels-photo-3184304.jpeg',
+      image: 'https://images.pexels.com/photos/3184304/pexels-photo-3184304.jpeg?auto=compress&cs=tinysrgb&w=800',
       downloads: 2500,
       rating: 4.8,
       format: 'Figma',
-      tags: ['Dashboard', 'Admin', 'Charts', 'Tables']
+      tags: ['Dashboard', 'Admin', 'Charts', 'Tables'],
+      detailedDescription: 'A comprehensive admin dashboard template featuring modern data visualization components, responsive grid layouts, and intuitive navigation patterns. Includes pre-built components for analytics, user management, and system monitoring.'
     },
     {
       id: 'ecommerce-mobile',
       name: 'E-commerce Mobile App',
       category: 'mobile',
       description: 'Complete mobile app design for e-commerce with shopping cart and checkout',
-      image: 'https://images.pexels.com/photos/3184295/pexels-photo-3184295.jpeg',
+      image: 'https://images.pexels.com/photos/3184295/pexels-photo-3184295.jpeg?auto=compress&cs=tinysrgb&w=800',
       downloads: 3200,
       rating: 4.9,
       format: 'Sketch',
-      tags: ['Mobile', 'E-commerce', 'Shopping', 'iOS']
+      tags: ['Mobile', 'E-commerce', 'Shopping', 'iOS'],
+      detailedDescription: 'A complete mobile e-commerce solution with product browsing, search functionality, shopping cart, secure checkout, and user account management. Optimized for iOS with native interaction patterns and accessibility features.'
     },
     {
       id: 'landing-page-saas',

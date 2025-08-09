@@ -6,26 +6,26 @@ export const categories: UICategory[] = [
     id: 'whitespace',
     title: 'White Space & Color Theory',
     description: 'Master the fundamentals of visual hierarchy and color harmony',
-    image: 'https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg',
+    image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
     featured: true
   },
   {
     id: 'typography',
     title: 'Typography Principles',
     description: 'Create readable and beautiful text hierarchies',
-    image: 'https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg'
+    image: 'https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: 'hierarchy',
     title: 'Visual Hierarchy',
     description: 'Guide users attention through deliberate design choices',
-    image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg'
+    image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: 'consistency',
     title: 'Consistency & Patterns',
     description: 'Build familiar and predictable user experiences',
-    image: 'https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg'
+    image: 'https://images.pexels.com/photos/3184319/pexels-photo-3184319.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   
   // User Experience & Interaction
@@ -33,26 +33,26 @@ export const categories: UICategory[] = [
     id: 'navigation',
     title: 'Navigation Design',
     description: 'Create intuitive wayfinding and menu systems',
-    image: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg',
+    image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
     featured: true
   },
   {
     id: 'interaction',
     title: 'Interaction Design',
     description: 'Design meaningful user interactions and micro-animations',
-    image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg'
+    image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: 'forms',
     title: 'Form Design',
     description: 'Create user-friendly forms that convert and delight',
-    image: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg'
+    image: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: 'buttons',
     title: 'Button & CTA Design',
     description: 'Design compelling calls-to-action that drive engagement',
-    image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg'
+    image: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   
   // Layout & Structure
@@ -60,19 +60,19 @@ export const categories: UICategory[] = [
     id: 'layout',
     title: 'Layout & Grid Systems',
     description: 'Master responsive layouts and grid-based design',
-    image: 'https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg'
+    image: 'https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: 'responsive',
     title: 'Responsive Design',
     description: 'Create seamless experiences across all devices',
-    image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg'
+    image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: 'spacing',
     title: 'Spacing & Alignment',
     description: 'Use spacing systems to create visual rhythm and balance',
-    image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg'
+    image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   
   // Visual Design Elements
@@ -80,19 +80,19 @@ export const categories: UICategory[] = [
     id: 'icons',
     title: 'Icon Design',
     description: 'Create and use icons effectively in user interfaces',
-    image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg'
+    image: 'https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: 'imagery',
     title: 'Images & Media',
     description: 'Integrate visual content that enhances user experience',
-    image: 'https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg'
+    image: 'https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: 'branding',
     title: 'Brand Integration',
     description: 'Seamlessly integrate brand identity into interface design',
-    image: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg'
+    image: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   
   // User-Centered Design
@@ -100,19 +100,19 @@ export const categories: UICategory[] = [
     id: 'accessibility',
     title: 'Accessibility Design',
     description: 'Create inclusive interfaces for all users',
-    image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg'
+    image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: 'usability',
     title: 'Usability Principles',
     description: 'Design interfaces that are easy to learn and use',
-    image: 'https://images.pexels.com/photos/3184317/pexels-photo-3184317.jpeg'
+    image: 'https://images.pexels.com/photos/3184317/pexels-photo-3184317.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: 'user-research',
     title: 'User Research & Testing',
     description: 'Validate design decisions through user insights',
-    image: 'https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg'
+    image: 'https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   
   // Feedback & Communication
@@ -120,19 +120,19 @@ export const categories: UICategory[] = [
     id: 'feedback',
     title: 'User Feedback',
     description: 'Provide clear responses to user interactions',
-    image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg'
+    image: 'https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: 'errors',
     title: 'Error Handling',
     description: 'Design helpful error states and recovery flows',
-    image: 'https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg'
+    image: 'https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: 'loading',
     title: 'Loading & Progress',
     description: 'Keep users informed during wait times and processes',
-    image: 'https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg'
+    image: 'https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   
   // Advanced Concepts
@@ -140,20 +140,20 @@ export const categories: UICategory[] = [
     id: 'design-systems',
     title: 'Design Systems',
     description: 'Build scalable and consistent design languages',
-    image: 'https://images.pexels.com/photos/3184319/pexels-photo-3184319.jpeg',
+    image: 'https://images.pexels.com/photos/3184319/pexels-photo-3184319.jpeg?auto=compress&cs=tinysrgb&w=800',
     featured: true
   },
   {
     id: 'prototyping',
     title: 'Prototyping',
     description: 'Create interactive prototypes to test and validate ideas',
-    image: 'https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg'
+    image: 'https://images.pexels.com/photos/3184302/pexels-photo-3184302.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: 'animation',
     title: 'UI Animation',
     description: 'Use motion design to enhance user experience',
-    image: 'https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg'
+    image: 'https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   
   // Specialized Areas
@@ -161,25 +161,25 @@ export const categories: UICategory[] = [
     id: 'mobile',
     title: 'Mobile UI Design',
     description: 'Design native and responsive mobile experiences',
-    image: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg'
+    image: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: 'web',
     title: 'Web Interface Design',
     description: 'Master web-specific UI patterns and conventions',
-    image: 'https://images.pexels.com/photos/3184302/pexels-photo-3184302.jpeg'
+    image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: 'dashboard',
     title: 'Dashboard Design',
     description: 'Create effective data visualization and admin interfaces',
-    image: 'https://images.pexels.com/photos/3184304/pexels-photo-3184304.jpeg'
+    image: 'https://images.pexels.com/photos/3184304/pexels-photo-3184304.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: 'ecommerce',
     title: 'E-commerce UI',
     description: 'Design conversion-focused shopping experiences',
-    image: 'https://images.pexels.com/photos/3184295/pexels-photo-3184295.jpeg'
+    image: 'https://images.pexels.com/photos/3184295/pexels-photo-3184295.jpeg?auto=compress&cs=tinysrgb&w=800'
   }
 ];
 
@@ -189,25 +189,37 @@ export const uiPrinciples: UIPrincipleDetail[] = [
     title: 'White Space Fundamentals',
     category: 'whitespace',
     description: 'Understanding when and how to use white space effectively',
-    content: `White space (also called negative space) is the area within a design that's intentionally left blank. It's a core principle in UI for improving readability, enhancing visual hierarchy, balancing content, guiding user focus, and elevating aesthetics.`,
-    image: 'https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg',
+    content: `White space (also called negative space) is the area within a design that's intentionally left blank. It's one of the most powerful tools in UI design, serving multiple critical functions that directly impact user experience and interface effectiveness.
+
+White space works by creating breathing room around elements, which reduces cognitive load and helps users process information more efficiently. Research shows that proper use of white space can increase comprehension by up to 20% and significantly improve user engagement.
+
+There are two primary types of white space: micro and macro. Micro white space refers to the small spaces between letters, words, and lines of text, while macro white space encompasses the larger areas between major design elements, sections, and layout components.
+
+The strategic use of white space creates visual hierarchy by establishing relationships between elements. When an element is surrounded by more white space, it naturally draws more attention and appears more important. This principle is fundamental to guiding user attention and creating effective call-to-action areas.
+
+White space also contributes to brand perception. Luxury brands often use generous amounts of white space to convey elegance and sophistication, while cramped layouts can make interfaces feel overwhelming and unprofessional.`,
+    image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
     examples: [
-      'Adding space around text elements for better readability',
-      'Creating clear separation between content sections',
-      'Using margins to prevent cramped layouts',
-      'Isolating important elements to draw attention'
+      'Apple\'s website uses generous white space around product images to create focus and premium feel',
+      'Google\'s search page leverages white space to emphasize the search bar as the primary action',
+      'Medium uses white space around articles to improve reading experience and reduce eye strain',
+      'Stripe\'s pricing page uses white space to separate different plan tiers clearly',
+      'Airbnb uses white space in property listings to make each listing easily scannable'
     ],
     keyPoints: [
-      'Improves readability by adding space around text elements',
-      'Enhances visual hierarchy by separating distinct sections',
-      'Balances and organizes content to avoid overwhelming users',
-      'Guides user focus by reducing visual noise',
-      'Elevates aesthetics with elegant, high-end feel'
+      'White space increases reading comprehension by up to 20% according to UX research',
+      'Micro white space (between letters, words, lines) affects readability and text flow',
+      'Macro white space (between sections, elements) creates visual hierarchy and organization',
+      'Active white space is intentionally used to create emphasis and guide attention',
+      'Passive white space occurs naturally and provides necessary breathing room',
+      'The 60-30-10 rule: 60% white space, 30% content, 10% accent elements for balanced layouts',
+      'White space reduces cognitive load by helping users process information more efficiently'
     ],
     citations: [
       { id: 1, text: 'Paralect - 5 ways to design better white space in your product UI', url: 'https://www.paralect.com/blog/post/5-ways-to-design-better-white-space-in-your-product-ui' },
       { id: 2, text: 'AppVenturez - Why white space is important in design', url: 'https://www.appventurez.com/blog/why-white-space-is-important-in-design' },
-      { id: 3, text: 'Venngage - White space design guide', url: 'https://venngage.com/blog/white-space-design/' }
+      { id: 3, text: 'Venngage - White space design guide', url: 'https://venngage.com/blog/white-space-design/' },
+      { id: 4, text: 'Nielsen Norman Group - The Power of White Space', url: 'https://www.nngroup.com/articles/whitespace/' }
     ]
   },
   {
@@ -215,25 +227,37 @@ export const uiPrinciples: UIPrincipleDetail[] = [
     title: 'Color Theory in UI Design',
     category: 'whitespace',
     description: 'Framework for using colors to achieve harmony and direct emotions',
-    content: `Color theory is a framework for using and combining colors to achieve harmony and direct emotions/attention. It includes understanding color models (RGB for digital, CMYK for print), color components (hue, saturation, lightness), and various color schemes for creating visually pleasing interfaces.`,
-    image: 'https://images.pexels.com/photos/1325720/pexels-photo-1325720.jpeg',
+    content: `Color theory in UI design is a comprehensive framework that governs how colors interact, influence user behavior, and create meaningful visual experiences. Understanding color theory is essential for creating interfaces that not only look appealing but also function effectively to guide user actions and communicate information.
+
+The foundation of digital color theory rests on the RGB (Red, Green, Blue) color model, where colors are created by combining different intensities of these three primary colors. Each color has three key properties: hue (the color itself), saturation (intensity or purity), and lightness (how light or dark the color appears).
+
+Color psychology plays a crucial role in UI design. Different colors evoke specific emotional responses and cultural associations. Red typically signals urgency, danger, or importance, making it ideal for error messages and critical actions. Blue conveys trust, stability, and professionalism, which is why it's widely used by financial institutions and social media platforms. Green represents success, growth, and positive actions, commonly used for confirmation messages and call-to-action buttons.
+
+Effective color schemes follow established patterns: monochromatic (variations of a single color), analogous (colors adjacent on the color wheel), complementary (opposite colors), and triadic (three evenly spaced colors). Each scheme serves different purposes and creates distinct visual effects.
+
+Accessibility is paramount in color selection. The Web Content Accessibility Guidelines (WCAG) require a minimum contrast ratio of 4.5:1 for normal text and 3:1 for large text to ensure readability for users with visual impairments. Color should never be the sole method of conveying information, as approximately 8% of men and 0.5% of women have some form of color vision deficiency.`,
+    image: 'https://images.pexels.com/photos/1325720/pexels-photo-1325720.jpeg?auto=compress&cs=tinysrgb&w=800',
     examples: [
-      'Using complementary colors for strong contrast',
-      'Applying monochromatic schemes for subtle elegance',
-      'Leveraging analogous colors for natural harmony',
-      'Creating accessible color combinations with proper contrast ratios'
+      'Facebook uses blue as its primary color to convey trust and reliability in social networking',
+      'Spotify uses green to represent play, growth, and positive music experiences',
+      'Netflix uses red to create excitement and urgency around entertainment content',
+      'Slack uses a purple-blue palette to appear professional yet approachable for workplace communication',
+      'Airbnb uses a warm coral color to evoke feelings of belonging and hospitality'
     ],
     keyPoints: [
-      'Color harmony engages users and establishes visual order',
-      'RGB model used for digital screens, CMYK for print',
-      'Hue, saturation, and lightness work together to create meaning',
-      'Different color schemes serve different design purposes',
-      'Colors should evoke appropriate emotions and brand identity'
+      'RGB color model: Red, Green, Blue values from 0-255 create all digital colors',
+      'HSL model (Hue, Saturation, Lightness) provides more intuitive color manipulation',
+      '60-30-10 color rule: 60% dominant color, 30% secondary, 10% accent for balanced palettes',
+      'WCAG AA compliance requires 4.5:1 contrast ratio for normal text, 3:1 for large text',
+      'Color temperature affects mood: warm colors (red, orange, yellow) energize, cool colors (blue, green, purple) calm',
+      'Cultural color associations vary globally: red means luck in China but danger in Western cultures',
+      'Color blindness affects 8% of men and 0.5% of women, requiring accessible design considerations'
     ],
     citations: [
       { id: 9, text: 'CareerFoundry - Introduction to color theory and color palettes', url: 'https://careerfoundry.com/en/blog/ui-design/introduction-to-color-theory-and-color-palettes/' },
       { id: 10, text: 'Ramotion - Color in UX design', url: 'https://www.ramotion.com/blog/color-in-ux-design/' },
-      { id: 11, text: 'Figma - What is color theory?', url: 'https://www.figma.com/resource-library/what-is-color-theory/' }
+      { id: 11, text: 'Figma - What is color theory?', url: 'https://www.figma.com/resource-library/what-is-color-theory/' },
+      { id: 12, text: 'Adobe - Color Theory Fundamentals', url: 'https://www.adobe.com/creativecloud/design/discover/color-theory.html' }
     ]
   }
 ];
@@ -295,24 +319,38 @@ const comprehensiveUIPrinciples: UIPrincipleDetail[] = [
     title: 'Typography and Readability',
     category: 'typography',
     description: 'Essential typography principles for creating readable and accessible interfaces',
-    content: `Typography affects readability, personality, and user experience. Good typography creates clear information hierarchy while ensuring content remains accessible and easy to read across all devices and contexts.`,
-    image: 'https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg',
+    content: `Typography is the art and science of arranging type to make written language legible, readable, and appealing. In UI design, typography serves as both a functional tool for information delivery and a powerful element of visual design that shapes user perception and experience.
+
+Readability is the ease with which a reader can understand written text, while legibility refers to how easily individual characters can be distinguished. Both are crucial for effective UI design, as poor typography can create barriers to user engagement and task completion.
+
+The anatomy of typography includes several key measurements: font size (measured in points or pixels), line height (leading), letter spacing (tracking), and word spacing. The relationship between these elements determines the overall readability and visual appeal of text.
+
+Font selection significantly impacts user experience. Serif fonts, with their decorative strokes, are traditionally better for long-form reading in print but can appear cluttered on screens. Sans-serif fonts, without decorative elements, generally perform better in digital interfaces due to their clean appearance at various screen resolutions.
+
+Responsive typography adapts to different screen sizes and viewing conditions. This involves not just scaling font sizes but also adjusting line heights, spacing, and even font weights to maintain optimal readability across devices.
+
+Typography hierarchy uses size, weight, color, and spacing to organize information and guide users through content. A well-established hierarchy helps users quickly scan and understand content structure, improving both usability and accessibility.`,
+    image: 'https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&w=800',
     examples: [
-      'Setting line height to 1.4-1.6x the font size for optimal readability',
-      'Keeping line length between 45-75 characters for comfortable reading',
-      'Using sufficient contrast between text and background colors',
-      'Choosing fonts that remain legible at small sizes'
+      'Medium uses Georgia serif font for articles to enhance reading comfort and reduce eye strain',
+      'Apple uses San Francisco font family across all interfaces for consistency and optimal screen rendering',
+      'Google Material Design uses Roboto font with specific size and weight scales for clear hierarchy',
+      'Stripe uses Inter font with generous line spacing for improved readability in financial interfaces',
+      'GitHub uses system fonts for code display to ensure maximum legibility for developers'
     ],
     keyPoints: [
-      'Use size, weight, and spacing to create clear information hierarchy',
-      'Limit to 2-3 font families maximum to maintain consistency',
-      'Establish consistent heading levels (H1, H2, H3) throughout',
-      'Line height should be 1.4-1.6x the font size for readability',
-      'Optimal line length is 45-75 characters for comfortable reading'
+      'Optimal line height is 1.4-1.6x the font size for body text, 1.2-1.3x for headings',
+      'Ideal line length is 45-75 characters (including spaces) for comfortable reading',
+      'Font size should be minimum 16px for body text on mobile devices',
+      'Contrast ratio must meet WCAG standards: 4.5:1 for normal text, 3:1 for large text',
+      'Typography scale should follow mathematical ratios (1.125, 1.25, 1.333) for harmonious sizing',
+      'System fonts load faster and provide better performance than web fonts',
+      'Font loading strategies (font-display: swap) prevent invisible text during font load'
     ],
     citations: [
       { id: 43, text: 'Typography Handbook - Readability Guidelines', url: 'https://typographyhandbook.com/readability/' },
-      { id: 44, text: 'A List Apart - Typography on the Web', url: 'https://alistapart.com/article/typography-on-the-web/' }
+      { id: 44, text: 'A List Apart - Typography on the Web', url: 'https://alistapart.com/article/typography-on-the-web/' },
+      { id: 45, text: 'Google Fonts - Typography Best Practices', url: 'https://fonts.google.com/knowledge' }
     ]
   },
   {
