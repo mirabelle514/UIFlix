@@ -5,7 +5,7 @@ export const categories: UICategory[] = [
   {
     id: 'whitespace',
     title: 'White Space & Color Theory',
-    description: 'Master the fundamentals of visual hierarchy and color harmony',
+    image: 'https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=800',
     image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
     featured: true
   },
@@ -32,67 +32,67 @@ export const categories: UICategory[] = [
   {
     id: 'navigation',
     title: 'Navigation Design',
-    description: 'Create intuitive wayfinding and menu systems',
+    image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
     image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
     featured: true
   },
   {
     id: 'interaction',
     title: 'Interaction Design',
-    description: 'Design meaningful user interactions and micro-animations',
+    image: 'https://images.pexels.com/photos/3184295/pexels-photo-3184295.jpeg?auto=compress&cs=tinysrgb&w=800',
     image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: 'forms',
     title: 'Form Design',
     description: 'Create user-friendly forms that convert and delight',
-    image: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800'
+    image: 'https://images.pexels.com/photos/3184304/pexels-photo-3184304.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     id: 'buttons',
     title: 'Button & CTA Design',
     description: 'Design compelling calls-to-action that drive engagement',
     image: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=800'
-  },
+    image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
   
   // Layout & Structure
   {
     id: 'layout',
     title: 'Layout & Grid Systems',
     description: 'Master responsive layouts and grid-based design',
-    image: 'https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=800'
+    image: 'https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     id: 'responsive',
     title: 'Responsive Design',
     description: 'Create seamless experiences across all devices',
     image: 'https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800'
-  },
+    image: 'https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&w=800',
   {
     id: 'spacing',
     title: 'Spacing & Alignment',
     description: 'Use spacing systems to create visual rhythm and balance',
     image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
-  
+    image: 'https://images.pexels.com/photos/3184319/pexels-photo-3184319.jpeg?auto=compress&cs=tinysrgb&w=800',
   // Visual Design Elements
   {
     id: 'icons',
     title: 'Icon Design',
     description: 'Create and use icons effectively in user interfaces',
     image: 'https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=800'
-  },
+    image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
   {
     id: 'imagery',
     title: 'Images & Media',
     description: 'Integrate visual content that enhances user experience',
-    image: 'https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=800'
+    image: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   {
     id: 'branding',
     title: 'Brand Integration',
     description: 'Seamlessly integrate brand identity into interface design',
-    image: 'https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=800'
+    image: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   
   // User-Centered Design
@@ -118,42 +118,42 @@ export const categories: UICategory[] = [
   // Feedback & Communication
   {
     id: 'feedback',
-    title: 'User Feedback',
+    image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
     description: 'Provide clear responses to user interactions',
     image: 'https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: 'errors',
     title: 'Error Handling',
-    description: 'Design helpful error states and recovery flows',
+    image: 'https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800',
     image: 'https://images.pexels.com/photos/3184298/pexels-photo-3184298.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: 'loading',
     title: 'Loading & Progress',
     description: 'Keep users informed during wait times and processes',
-    image: 'https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&cs=tinysrgb&w=800'
+    image: 'https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   
   // Advanced Concepts
   {
     id: 'design-systems',
     title: 'Design Systems',
-    description: 'Build scalable and consistent design languages',
+    image: 'https://images.pexels.com/photos/3184302/pexels-photo-3184302.jpeg?auto=compress&cs=tinysrgb&w=800',
     image: 'https://images.pexels.com/photos/3184319/pexels-photo-3184319.jpeg?auto=compress&cs=tinysrgb&w=800',
     featured: true
   },
   {
     id: 'prototyping',
     title: 'Prototyping',
-    description: 'Create interactive prototypes to test and validate ideas',
+    image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
     image: 'https://images.pexels.com/photos/3184302/pexels-photo-3184302.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: 'animation',
     title: 'UI Animation',
     description: 'Use motion design to enhance user experience',
-    image: 'https://images.pexels.com/photos/3184299/pexels-photo-3184299.jpeg?auto=compress&cs=tinysrgb&w=800'
+    image: 'https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   
   // Specialized Areas
@@ -330,7 +330,7 @@ Font selection significantly impacts user experience. Serif fonts, with their de
 Responsive typography adapts to different screen sizes and viewing conditions. This involves not just scaling font sizes but also adjusting line heights, spacing, and even font weights to maintain optimal readability across devices.
 
 Typography hierarchy uses size, weight, color, and spacing to organize information and guide users through content. A well-established hierarchy helps users quickly scan and understand content structure, improving both usability and accessibility.`,
-    image: 'https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/261763/pexels-photo-261763.jpeg?auto=compress&cs=tinysrgb&w=800',
     examples: [
       'Medium uses Georgia serif font for articles to enhance reading comfort and reduce eye strain',
       'Apple uses San Francisco font family across all interfaces for consistency and optimal screen rendering',
@@ -566,28 +566,28 @@ export const allUIPrinciples: UIPrincipleDetail[] = [
     id: 'navigation-patterns',
     title: 'Navigation Patterns',
     category: 'navigation',
-    description: 'Common navigation patterns and when to use them',
+    image: 'https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800',
     content: `Navigation patterns are established UI conventions that help users move through digital products efficiently. Understanding when and how to implement different navigation patterns is crucial for creating intuitive user experiences.`,
     image: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg',
     examples: [
       'Top navigation bars for primary site sections',
       'Sidebar navigation for complex applications',
       'Breadcrumb navigation for deep hierarchies',
-      'Tab navigation for related content sections'
+    image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800',
     ],
     keyPoints: [
       'Choose patterns based on content structure and user needs',
       'Maintain consistency across similar navigation elements',
       'Provide clear visual indicators for current location',
       'Ensure navigation is accessible via keyboard and screen readers',
-      'Test navigation patterns with real users for usability'
+    image: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=800',
     ],
     citations: [
       { id: 27, text: 'Nielsen Norman Group - Navigation Design', url: 'https://www.nngroup.com/articles/navigation-design/' },
       { id: 28, text: 'UX Planet - Navigation Patterns', url: 'https://uxplanet.org/navigation-patterns' }
     ]
   },
-  
+    image: 'https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg?auto=compress&cs=tinysrgb&w=800',
   // Form Design
   {
     id: 'form-usability',
