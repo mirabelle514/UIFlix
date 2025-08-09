@@ -12,7 +12,7 @@ export const categories: UICategory[] = [
   {
     id: 'typography',
     title: 'Typography Principles',
-    description: 'Create readable and accessible text that enhances user experience',
+    description: 'Essential typography principles for creating readable and accessible interfaces',
     image: 'https://images.pexels.com/photos/261763/pexels-photo-261763.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
@@ -676,7 +676,7 @@ export const allUIPrinciples: UIPrincipleDetail[] = [
     category: 'responsive',
     description: 'Design for mobile devices first, then scale up to larger screens',
     content: `Mobile-first design is an approach that starts with designing for the smallest screen size and progressively enhances the experience for larger screens. This ensures optimal performance and usability across all devices.`,
-    image: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg',
     examples: [
       'Designing touch-friendly interfaces from the start',
       'Prioritizing essential content for small screens',
@@ -705,13 +705,13 @@ export const allUIPrinciples: UIPrincipleDetail[] = [
     content: `Component libraries are collections of reusable UI elements that maintain consistency across products and teams. They include design specifications, code implementations, and usage guidelines for each component.`,
     image: 'https://images.pexels.com/photos/3184319/pexels-photo-3184319.jpeg',
     examples: [
-      'Button components with multiple variants and states',
+      'Button components with multiple states and variants',
       'Form input components with validation patterns',
       'Card components for content display',
       'Navigation components with responsive behavior'
     ],
     keyPoints: [
-      'Consistency across products and teams',
+      'Reusable components ensure consistency',
       'Faster development and design processes',
       'Easier maintenance and updates',
       'Better collaboration between design and development',
@@ -730,17 +730,17 @@ export const allUIPrinciples: UIPrincipleDetail[] = [
     content: `Visual hierarchy is the arrangement of elements in a way that implies importance. It guides users through content by using size, color, contrast, spacing, and positioning to create a clear path for the eye to follow.`,
     image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg',
     examples: [
-      'Using size to establish importance levels',
-      'Color and contrast to direct user focus',
+      'Using larger sizes for more important elements',
+      'High contrast draws immediate attention',
       'Strategic use of white space for emphasis',
       'Consistent patterns for similar content types'
     ],
     keyPoints: [
-      'Size creates immediate visual importance',
+      'Size and scale establish importance',
       'Color and contrast direct user focus',
       'Position and alignment establish reading patterns',
-      'White space isolates and emphasizes elements',
-      'Consistency helps users predict interface behavior'
+      'Consistency helps users predict interface behavior',
+      'Progressive disclosure prevents information overload'
     ],
     citations: [
       { id: 17, text: 'UX Planet - Visual Hierarchy Guide', url: 'https://uxplanet.org/visual-hierarchy-guide' },
@@ -778,7 +778,7 @@ export const allUIPrinciples: UIPrincipleDetail[] = [
     category: 'accessibility',
     description: 'Creating inclusive interfaces for all users',
     content: `Accessibility in UI design ensures that interfaces can be used by people with various abilities and disabilities. This includes visual, auditory, motor, and cognitive considerations that make digital products usable by everyone.`,
-    image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800',
     examples: [
       'Sufficient color contrast for text readability',
       'Keyboard navigation for all interactive elements',
@@ -790,7 +790,7 @@ export const allUIPrinciples: UIPrincipleDetail[] = [
       'Color contrast ratios ensure readability',
       'Keyboard navigation supports motor disabilities',
       'Screen reader compatibility aids visual impairments',
-      'Clear language helps cognitive accessibility'
+      'Inclusive design benefits all users'
     ],
     citations: [
       { id: 21, text: 'WCAG Guidelines', url: 'https://www.w3.org/WAI/WCAG21/quickref/' },
@@ -802,19 +802,19 @@ export const allUIPrinciples: UIPrincipleDetail[] = [
     title: 'User Feedback Systems',
     category: 'feedback',
     description: 'Providing clear responses to user interactions',
-    content: `User feedback systems communicate the results of user actions and the current state of the interface. Effective feedback helps users understand what's happening, what went wrong, and what they should do next.`,
+    content: `User feedback systems inform users about the results of their actions, system status, and next steps. Effective feedback reduces uncertainty, builds confidence, and guides users through complex interactions.`,
     image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg',
     examples: [
       'Loading states during data processing',
       'Success messages after form submission',
       'Error states with clear correction guidance',
-      'Hover states for interactive elements'
+      'Hover effects on interactive elements'
     ],
     keyPoints: [
       'Immediate feedback confirms user actions',
       'Progress indicators manage user expectations',
       'Error messages should be helpful, not punitive',
-      'Visual states show system status clearly',
+      'Visual states communicate system status',
       'Consistent feedback patterns build user confidence'
     ],
     citations: [
