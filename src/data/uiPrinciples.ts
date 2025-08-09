@@ -6,13 +6,13 @@ export const categories: UICategory[] = [
     id: 'whitespace',
     title: 'White Space & Color Theory',
     description: 'Master the fundamentals of space and color in interface design',
-    image: 'https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/1148820/pexels-photo-1148820.jpeg?auto=compress&cs=tinysrgb&w=800',
     featured: true
   },
   {
     id: 'typography',
     title: 'Typography Principles',
-    description: 'Create readable and beautiful text hierarchies',
+    image: 'https://images.pexels.com/photos/261763/pexels-photo-261763.jpeg?auto=compress&cs=tinysrgb&w=800',
     image: 'https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
@@ -567,7 +567,7 @@ export const allUIPrinciples: UIPrincipleDetail[] = [
     title: 'Navigation Patterns',
     category: 'navigation',
     description: 'Understanding common navigation patterns and when to use them',
-    image: 'https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800',
+    image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg?auto=compress&cs=tinysrgb&w=800',
     content: `Navigation patterns are established UI conventions that help users move through digital products efficiently. Understanding when and how to implement different navigation patterns is crucial for creating intuitive user experiences.`,
     image: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg',
     examples: [
@@ -682,146 +682,146 @@ export const allUIPrinciples: UIPrincipleDetail[] = [
       'Designing touch-friendly interfaces from the start',
       'Prioritizing essential content for small screens',
       'Using progressive enhancement for larger screens',
-      'Optimizing images and assets for mobile performance'
+    image: 'https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=800',
     ],
     keyPoints: [
       'Mobile usage continues to grow globally',
       'Constraints force focus on essential features',
       'Better performance on all devices',
-      'Easier to scale up than scale down',
+    image: 'https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=800',
       'Improves accessibility and usability'
     ],
     citations: [
       { id: 35, text: 'A Book Apart - Mobile First', url: 'https://abookapart.com/products/mobile-first' },
       { id: 36, text: 'Smashing Magazine - Mobile First Design', url: 'https://www.smashingmagazine.com/mobile-first-design/' }
-    ]
+    image: 'https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=800',
   },
   
   // Design Systems
   {
     id: 'component-libraries',
-    title: 'Component Libraries',
+    image: 'https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800',
     category: 'design-systems',
     description: 'Build reusable component libraries for consistent interfaces',
     content: `Component libraries are collections of reusable UI elements that maintain consistency across products and teams. They include design specifications, code implementations, and usage guidelines for each component.`,
     image: 'https://images.pexels.com/photos/3184319/pexels-photo-3184319.jpeg',
     examples: [
-      'Button components with multiple variants and states',
+    image: 'https://images.pexels.com/photos/1779487/pexels-photo-1779487.jpeg?auto=compress&cs=tinysrgb&w=800',
       'Form input components with validation patterns',
       'Card components for content display',
       'Navigation components with responsive behavior'
     ],
     keyPoints: [
-      'Consistency across products and teams',
+    image: 'https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&w=800',
       'Faster development and design processes',
       'Easier maintenance and updates',
       'Better collaboration between design and development',
       'Scalable design solutions for growing products'
     ],
     citations: [
-      { id: 37, text: 'Design Systems Handbook', url: 'https://www.designsystems.com/' },
+    image: 'https://images.pexels.com/photos/3184357/pexels-photo-3184357.jpeg?auto=compress&cs=tinysrgb&w=800',
       { id: 38, text: 'Atomic Design - Brad Frost', url: 'https://atomicdesign.bradfrost.com/' }
     ]
   },
   {
     id: 'visual-hierarchy-principles',
-    title: 'Visual Hierarchy Fundamentals',
+    image: 'https://images.pexels.com/photos/267569/pexels-photo-267569.jpeg?auto=compress&cs=tinysrgb&w=800',
     category: 'hierarchy',
     description: 'Guiding user attention through deliberate design choices',
     content: `Visual hierarchy is the arrangement of elements in a way that implies importance. It guides users through content by using size, color, contrast, spacing, and positioning to create a clear path for the eye to follow.`,
     image: 'https://images.pexels.com/photos/196644/pexels-photo-196644.jpeg',
     examples: [
-      'Larger elements appear more important',
+    image: 'https://images.pexels.com/photos/1509534/pexels-photo-1509534.jpeg?auto=compress&cs=tinysrgb&w=800',
       'High contrast draws immediate attention',
       'Strategic use of white space for emphasis',
       'Consistent patterns for similar content types'
     ],
     keyPoints: [
-      'Size and scale create immediate visual weight',
+    image: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800',
       'Color and contrast direct user focus',
       'Position and alignment establish reading patterns',
       'Consistency helps users predict interface behavior',
       'Progressive disclosure prevents information overload'
     ],
-    citations: [
+    image: 'https://images.pexels.com/photos/3184304/pexels-photo-3184304.jpeg?auto=compress&cs=tinysrgb&w=800',
       { id: 17, text: 'UX Planet - Visual Hierarchy Guide', url: 'https://uxplanet.org/visual-hierarchy-guide' },
       { id: 18, text: 'Nielsen Norman Group - Visual Hierarchy', url: 'https://www.nngroup.com/articles/visual-hierarchy-ux-definition/' }
     ]
   },
   {
-    id: 'consistency-patterns',
+    image: 'https://images.pexels.com/photos/3184295/pexels-photo-3184295.jpeg?auto=compress&cs=tinysrgb&w=800',
     title: 'Consistency & Design Patterns',
     category: 'consistency',
     description: 'Building familiar and predictable user experiences',
     content: `Consistency in UI design means maintaining uniform patterns, behaviors, and visual elements throughout an interface. It reduces cognitive load by allowing users to apply learned behaviors across different parts of the system.`,
     image: 'https://images.pexels.com/photos/443383/pexels-photo-443383.jpeg',
-    examples: [
+    image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
       'Consistent button styles and behaviors',
       'Uniform spacing and alignment patterns',
       'Standardized color usage for similar functions',
       'Predictable navigation and interaction patterns'
     ],
-    keyPoints: [
+    image: 'https://images.pexels.com/photos/3184319/pexels-photo-3184319.jpeg?auto=compress&cs=tinysrgb&w=800',
       'Reduces learning curve for new users',
       'Builds user confidence and trust',
       'Improves efficiency through predictable patterns',
       'Creates cohesive brand experience',
       'Facilitates easier maintenance and updates'
-    ],
+    image: 'https://images.pexels.com/photos/590016/pexels-photo-590016.jpeg?auto=compress&cs=tinysrgb&w=800',
     citations: [
       { id: 19, text: 'Design Systems Handbook - Consistency', url: 'https://www.designsystems.com/consistency' },
       { id: 20, text: 'Material Design - Consistency Guidelines', url: 'https://material.io/design/guidelines-overview' }
     ]
   },
-  {
+    image: 'https://images.pexels.com/photos/1181263/pexels-photo-1181263.jpeg?auto=compress&cs=tinysrgb&w=800',
     id: 'accessibility-fundamentals',
     title: 'Accessibility Design Fundamentals',
     category: 'accessibility',
     description: 'Creating inclusive interfaces for all users',
     content: `Accessibility in UI design ensures that interfaces can be used by people with various abilities and disabilities. This includes visual, auditory, motor, and cognitive considerations that make digital products usable by everyone.`,
-    image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg',
+    image: 'https://images.pexels.com/photos/3184306/pexels-photo-3184306.jpeg?auto=compress&cs=tinysrgb&w=800',
     examples: [
       'Sufficient color contrast for text readability',
       'Keyboard navigation for all interactive elements',
       'Alt text for images and visual content',
       'Clear focus indicators and error messages'
-    ],
+    image: 'https://images.pexels.com/photos/3184311/pexels-photo-3184311.jpeg?auto=compress&cs=tinysrgb&w=800',
     keyPoints: [
       'WCAG guidelines provide accessibility standards',
       'Color contrast ratios ensure readability',
       'Keyboard navigation supports motor disabilities',
       'Screen reader compatibility aids visual impairments',
-      'Clear language helps cognitive accessibility'
+    image: 'https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800',
     ],
     citations: [
       { id: 21, text: 'WCAG Guidelines', url: 'https://www.w3.org/WAI/WCAG21/quickref/' },
       { id: 22, text: 'A11y Project - Accessibility Guide', url: 'https://www.a11yproject.com/' }
     ]
-  },
+    image: 'https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=800',
   {
     id: 'user-feedback-systems',
     title: 'User Feedback Systems',
     category: 'feedback',
     description: 'Providing clear responses to user interactions',
-    content: `User feedback systems communicate the results of user actions through visual, auditory, or haptic responses. Effective feedback helps users understand system status, confirms actions, and guides next steps.`,
+    image: 'https://images.pexels.com/photos/196645/pexels-photo-196645.jpeg?auto=compress&cs=tinysrgb&w=800',
     image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg',
     examples: [
       'Loading states during data processing',
       'Success messages after form submission',
       'Error states with clear correction guidance',
-      'Hover effects on interactive elements'
+    image: 'https://images.pexels.com/photos/3184287/pexels-photo-3184287.jpeg?auto=compress&cs=tinysrgb&w=800',
     ],
     keyPoints: [
       'Immediate feedback confirms user actions',
       'Progress indicators manage user expectations',
       'Error messages should be helpful, not punitive',
-      'Micro-interactions enhance user engagement',
+    image: 'https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=800',
       'Consistent feedback patterns build user confidence'
     ],
     citations: [
       { id: 23, text: 'UX Design - Feedback Principles', url: 'https://uxdesign.cc/feedback-principles' },
       { id: 24, text: 'Interaction Design Foundation - Feedback', url: 'https://www.interaction-design.org/literature/topics/feedback' }
-    ]
+    image: 'https://images.pexels.com/photos/4050315/pexels-photo-4050315.jpeg?auto=compress&cs=tinysrgb&w=800',
   }
 ];
 
