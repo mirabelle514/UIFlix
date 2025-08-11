@@ -156,15 +156,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch, onNavigate, currentPath }) =>
                   <p className="text-gray-400 text-sm">{userProfile.email}</p>
                 </div>
                 <div className="py-2">
-                  <button
-                    onClick={() => {
-                      onNavigate('/profile');
-                      setUserMenuOpen(false);
-                    }}
-                    className="w-full text-left px-4 py-2 text-white hover:bg-gray-800 transition-colors"
-                  >
-                    My Profile
-                  </button>
+
                   <button
                     onClick={() => {
                       onNavigate('/my-learning');
@@ -182,6 +174,15 @@ const Header: React.FC<HeaderProps> = ({ onSearch, onNavigate, currentPath }) =>
                     className="w-full text-left px-4 py-2 text-white hover:bg-gray-800 transition-colors"
                   >
                     Contribute
+                  </button>
+                  <button
+                    onClick={() => {
+                      onNavigate('/cache-manager');
+                      setUserMenuOpen(false);
+                    }}
+                    className="w-full text-left px-4 py-2 text-white hover:bg-gray-800 transition-colors"
+                  >
+                    Cache Manager
                   </button>
                   <hr className="border-gray-700 my-2" />
                   <button className="w-full text-left px-4 py-2 text-white hover:bg-gray-800 transition-colors">

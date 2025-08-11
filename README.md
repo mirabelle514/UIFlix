@@ -45,6 +45,43 @@ UXFlix combines intuitive user experience with comprehensive UX education to cre
 - Node.js 16 or higher
 - npm or yarn package manager
 
+### Cache Management
+
+UIFlix includes comprehensive cache clearing capabilities to ensure a fresh experience:
+
+#### Via User Interface
+- **Cache Manager Page**: Navigate to `/cache-manager` or use the "Cache Manager" option in the user menu
+- **Profile Page**: Use the "Clear Cache" button on your profile page
+- **Selective Clearing**: Choose to clear specific types of storage (localStorage, sessionStorage, cookies)
+
+#### Via Browser Console
+```javascript
+// Quick cache clear function
+clearUIFlixCache()
+
+// Or manually clear specific storage
+localStorage.clear()
+sessionStorage.clear()
+// Clear cookies
+document.cookie.split(';').forEach(cookie => {
+  const name = cookie.split('=')[0].trim();
+  document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`;
+});
+```
+
+#### What Gets Cleared
+- **localStorage**: User preferences, learning progress, saved data
+- **sessionStorage**: Temporary session data
+- **Cookies**: Authentication tokens, user sessions
+- **IndexedDB**: Any stored databases
+- **Cache Storage**: Service worker caches
+- **Browser Cache**: Page resources and assets
+
+#### Cache Prevention
+- Development server includes no-cache headers
+- HTML includes cache prevention meta tags
+- Build configuration optimized for cache busting
+
 ### Installation
 
 1. Clone the repository:

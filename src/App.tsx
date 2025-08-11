@@ -1,11 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useLocation, useNavigate } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import HomePage from './pages/HomePage';
 import CategoryPage from './pages/CategoryPage';
 import SearchPage from './pages/SearchPage';
-import ProfilePage from './pages/ProfilePage';
+
 import PrinciplePage from './pages/PrinciplePage';
 import CategoriesPage from './pages/CategoriesPage';
 import MyLearningPage from './pages/MyLearningPage';
@@ -20,10 +20,26 @@ import ContactPage from './pages/ContactPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsOfServicePage from './pages/TermsOfServicePage';
 import ContributePage from './pages/ContributePage';
+import CacheManagerComponent from './components/CacheManager';
 
 const AppContent: React.FC = () => {
   const location = useLocation();
   const navigate = useNavigate();
+
+  // Add cache clearing function to window for console access
+  useEffect(() => {
+    (window as any).clearUIFlixCache = () => {
+      localStorage.clear();
+      sessionStorage.clear();
+      document.cookie.split(';').forEach(cookie => {
+        const name = cookie.split('=')[0].trim();
+        document.cookie = `${name}=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/`;
+      });
+      window.location.reload();
+    };
+    
+    console.log('💡 Quick cache clear available: run clearUIFlixCache() in console');
+  }, []);
 
   const handleSearch = (query: string) => {
     if (query.trim()) {
@@ -52,7 +68,7 @@ const AppContent: React.FC = () => {
           <Route path="/category/:categoryId" element={<CategoryPage onNavigate={handleNavigate} />} />
           <Route path="/search" element={<SearchPage onNavigate={handleNavigate} />} />
           <Route path="/search/:query" element={<SearchPage onNavigate={handleNavigate} />} />
-          <Route path="/profile" element={<ProfilePage onNavigate={handleNavigate} />} />
+
           <Route path="/principle/:principleId" element={<PrinciplePage onNavigate={handleNavigate} />} />
           <Route path="/design-tools" element={<DesignToolsPage onNavigate={handleNavigate} />} />
           <Route path="/templates" element={<TemplatesPage onNavigate={handleNavigate} />} />
@@ -62,6 +78,7 @@ const AppContent: React.FC = () => {
           <Route path="/about" element={<AboutPage onNavigate={handleNavigate} />} />
           <Route path="/contact" element={<ContactPage onNavigate={handleNavigate} />} />
           <Route path="/contribute" element={<ContributePage onNavigate={handleNavigate} />} />
+          <Route path="/cache-manager" element={<CacheManagerComponent onNavigate={handleNavigate} />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage onNavigate={handleNavigate} />} />
           <Route path="/terms-of-service" element={<TermsOfServicePage onNavigate={handleNavigate} />} />
         </Routes>

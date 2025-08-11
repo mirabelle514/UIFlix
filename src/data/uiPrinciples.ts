@@ -12,8 +12,7 @@ export const categories: UICategory[] = [
   {
     id: 'typography',
     title: 'Typography Principles',
-    image: 'https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&w=800',
-    image: 'https://images.pexels.com/photos/261763/pexels-photo-261763.jpeg?auto=compress&cs=tinysrgb&w=800'
+    image: 'https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: 'hierarchy',
@@ -33,8 +32,7 @@ export const categories: UICategory[] = [
     id: 'navigation',
     title: 'Navigation Design',
     description: 'Create intuitive navigation systems that guide users effectively',
-    image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800',
-    image: 'https://images.pexels.com/photos/1181298/pexels-photo-1181298.jpeg?auto=compress&cs=tinysrgb&w=800'
+    image: 'https://images.pexels.com/photos/3184418/pexels-photo-3184418.jpeg?auto=compress&cs=tinysrgb&w=800'
   },
   {
     id: 'interaction',
@@ -58,9 +56,9 @@ export const categories: UICategory[] = [
   // Layout & Structure
   {
     id: 'layout',
-     image: 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800',
-    description: 'Master responsive layouts and grid-based design',
-    image: 'https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=800'
+    title: 'Layout Design',
+    image: 'https://images.pexels.com/photos/1181467/pexels-photo-1181467.jpeg?auto=compress&cs=tinysrgb&w=800',
+    description: 'Master responsive layouts and grid-based design'
   },
   {
     id: 'responsive',
