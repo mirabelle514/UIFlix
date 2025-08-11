@@ -19,6 +19,7 @@ import AboutPage from './pages/AboutPage';
 import ContactPage from './pages/ContactPage';
 import PrivacyPolicyPage from './pages/PrivacyPolicyPage';
 import TermsOfServicePage from './pages/TermsOfServicePage';
+import ContributePage from './pages/ContributePage';
 
 const AppContent: React.FC = () => {
   const location = useLocation();
@@ -60,6 +61,7 @@ const AppContent: React.FC = () => {
           <Route path="/sources" element={<SourcesPage onNavigate={handleNavigate} />} />
           <Route path="/about" element={<AboutPage onNavigate={handleNavigate} />} />
           <Route path="/contact" element={<ContactPage onNavigate={handleNavigate} />} />
+          <Route path="/contribute" element={<ContributePage onNavigate={handleNavigate} />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage onNavigate={handleNavigate} />} />
           <Route path="/terms-of-service" element={<TermsOfServicePage onNavigate={handleNavigate} />} />
         </Routes>

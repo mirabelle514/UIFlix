@@ -80,6 +80,12 @@ const Header: React.FC<HeaderProps> = ({ onSearch, onNavigate, currentPath }) =>
             >
               My Learning
             </button>
+            <button 
+              onClick={() => onNavigate('/contribute')}
+              className={`transition-colors ${currentPath === '/contribute' ? 'text-white' : 'text-gray-400 hover:text-gray-300'}`}
+            >
+              Contribute
+            </button>
           </nav>
         </div>
 
@@ -167,6 +173,15 @@ const Header: React.FC<HeaderProps> = ({ onSearch, onNavigate, currentPath }) =>
                     className="w-full text-left px-4 py-2 text-white hover:bg-gray-800 transition-colors"
                   >
                     My Learning
+                  </button>
+                  <button
+                    onClick={() => {
+                      onNavigate('/contribute');
+                      setUserMenuOpen(false);
+                    }}
+                    className="w-full text-left px-4 py-2 text-white hover:bg-gray-800 transition-colors"
+                  >
+                    Contribute
                   </button>
                   <hr className="border-gray-700 my-2" />
                   <button className="w-full text-left px-4 py-2 text-white hover:bg-gray-800 transition-colors">
