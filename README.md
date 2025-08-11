@@ -154,7 +154,7 @@ We welcome contributions to improve UXFlix! Whether you're a developer, designer
 
 **Add New UI Principles**
 
-- Submit new UI/UX principles through our [Contribute Page](/contribute)
+- Submit new UI/UX principles through our [Contribute Page](https://uiflix.org/)
 - Ensure principles are well-researched with practical examples
 - Include relevant citations and sources
 - Focus on principles that developers can implement
