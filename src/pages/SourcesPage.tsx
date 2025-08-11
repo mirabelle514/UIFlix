@@ -126,7 +126,7 @@ const SourcesPage: React.FC<SourcesPageProps> = ({ onNavigate }) => {
             Sources & References
           </h1>
           <p className="text-gray-400 text-lg max-w-3xl">
-            All content on DevUX is based on established UI/UX design principles and research from 
+            All content on UXFlix is based on established UI/UX design principles and research from 
             industry experts. Sources are organized by topic for easy navigation and reference.
           </p>
         </div>
@@ -206,7 +206,7 @@ const SourcesPage: React.FC<SourcesPageProps> = ({ onNavigate }) => {
               <h2 className="text-2xl font-bold text-white mb-4">About Our Sources</h2>
               <div className="space-y-4 text-gray-300">
                 <p>
-                  Every principle and concept taught on DevUX is backed by established research, 
+                  Every principle and concept taught on UXFlix is backed by established research, 
                   industry best practices, and expert knowledge. We carefully curate our sources to ensure:
                 </p>
                 
@@ -230,7 +230,7 @@ const SourcesPage: React.FC<SourcesPageProps> = ({ onNavigate }) => {
         <div className="p-6 bg-yellow-900/20 border border-yellow-500/30 rounded-lg">
           <h3 className="text-yellow-300 font-semibold mb-2">Educational Use Disclaimer</h3>
           <p className="text-yellow-200 text-sm">
-            <strong>Disclaimer:</strong> DevUX is an educational platform created to teach UI design principles. 
+                          <strong>Disclaimer:</strong> UXFlix is an educational platform created to teach UI design principles. 
             All design patterns and visual elements are used for educational purposes only. This site is not 
             affiliated with Netflix, Inc. All cited sources are provided for educational reference and 
             to credit the original authors and researchers.

@@ -1,10 +1,10 @@
-# DevUX - UX Principles for Developers
+# UXFlix - UX Principles for Developers
 
-DevUX is an educational platform that bridges the gap between development and user experience design. Built with a Netflix-inspired interface, it provides developers with essential UX/UI knowledge through comprehensive lessons, practical examples, and hands-on learning.
+UXFlix is an educational platform that bridges the gap between development and user experience design. Built with a Netflix-inspired interface, it provides developers with essential UX/UI knowledge through comprehensive lessons, practical examples, and hands-on learning.
 
 ## Overview
 
-DevUX combines intuitive user experience with comprehensive UX education to create the ultimate learning platform for developers who want to build better user interfaces. The platform teaches essential design principles that every developer should understand to create intuitive, accessible, and user-friendly applications.
+UXFlix combines intuitive user experience with comprehensive UX education to create the ultimate learning platform for developers who want to build better user interfaces. The platform teaches essential design principles that every developer should understand to create intuitive, accessible, and user-friendly applications.
 
 ## Features
 
@@ -51,7 +51,7 @@ DevUX combines intuitive user experience with comprehensive UX education to crea
 
    ```bash
    git clone [repository-url]
-   cd devux
+   cd uxflix
    ```
 
 2. Install dependencies:
@@ -129,7 +129,7 @@ The platform uses progressive disclosure principles to manage complexity, reveal
 
 ## Accessibility
 
-DevUX is built with accessibility as a core principle:
+UXFlix is built with accessibility as a core principle:
 
 - WCAG 2.1 AA compliance
 - Keyboard navigation support
@@ -146,7 +146,7 @@ DevUX is built with accessibility as a core principle:
 
 ## Contributing
 
-We welcome contributions to improve DevUX! Whether you're a developer, designer, or UX enthusiast, there are many ways to contribute to this project.
+We welcome contributions to improve UXFlix! Whether you're a developer, designer, or UX enthusiast, there are many ways to contribute to this project.
 
 ### How to Contribute
 
@@ -251,7 +251,7 @@ This project is licensed under the MIT License. See the LICENSE file for details
 
 ## Acknowledgments
 
-DevUX is built for educational purposes and draws inspiration from established design principles and research. All external sources are properly cited and credited to their original authors and researchers.
+UXFlix is built for educational purposes and draws inspiration from established design principles and research. All external sources are properly cited and credited to their original authors and researchers.
 
 ## Contact
 

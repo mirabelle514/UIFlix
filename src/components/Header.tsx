@@ -52,7 +52,7 @@ const Header: React.FC<HeaderProps> = ({ onSearch, onNavigate, currentPath }) =>
       <div className="flex items-center justify-between px-4 md:px-16 py-4">
         {/* Logo */}
         <div className="flex items-center space-x-8">
-          <h1 className="text-[#E50914] text-2xl font-bold">DevUX</h1>
+          <h1 className="text-[#E50914] text-2xl font-bold">UXFlix</h1>
           
           {/* Navigation */}
           <nav className="hidden md:flex space-x-6">

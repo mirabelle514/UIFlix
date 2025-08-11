@@ -39,11 +39,11 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
         {/* Hero Section - Clean Design */}
         <div className="text-center mb-16 py-16 bg-gradient-to-r from-gray-800/30 to-gray-900/30 rounded-lg">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-            About DevUX
+            About UXFlix
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto mb-8">
             We're on a mission to bridge the gap between development and user experience. 
-            DevUX combines Netflix's intuitive user experience with comprehensive UX education 
+            UXFlix combines Netflix's intuitive user experience with comprehensive UX education 
             to create the ultimate learning platform for developers who want to build better user interfaces.
           </p>
         </div>
@@ -96,7 +96,7 @@ const AboutPage: React.FC<AboutPageProps> = ({ onNavigate }) => {
 
         {/* What Makes Us Different */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-white mb-8 text-center">What Makes DevUX Different</h2>
+          <h2 className="text-3xl font-bold text-white mb-8 text-center">What Makes UXFlix Different</h2>
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
